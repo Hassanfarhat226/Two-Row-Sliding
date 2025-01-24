@@ -17,7 +17,7 @@ body {
   width: 90%;
   max-width: 1536px;
   margin-inline: auto;
-  height: 100px;
+  height: 125px;
   position: relative;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -31,20 +31,20 @@ body {
 
 @keyframes scrollLeft {
   to {
-    left: -200px;
+    left: -250px;
   }
 }
 
 @keyframes scrollRight {
   to {
-    right: -200px;
+    right: -250px;
   }
 }
 
 .itemLeft,
 .itemRight {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 125px;
   border-radius: 6px;
   position: absolute;
   animation-timing-function: linear;
@@ -91,14 +91,26 @@ body {
 .item12 {
   background-image: url("image6.png");
 }
+.item13 {
+  background-image: url("image1.png");
+}
+.item14 {
+  background-image: url("image2.png");
+}
+.item15 {
+  background-image: url("image3.png");
+}
+.item16 {
+  background-image: url("image4.png");
+}
 
 .itemLeft {
-  left: max(calc(200px * 8), 100%);
+  left: max(calc(250px * 8), 100%);
   animation-name: scrollLeft;
 }
 
 .itemRight {
-  right: max(calc(200px * 8), calc(100% + 200px));
+  right: max(calc(250px * 8), calc(100% + 250px));
   animation-name: scrollRight;
 }
 
@@ -135,21 +147,37 @@ body {
 }
 
 .item9 {
-  animation-delay: calc(30s / 4 * (4 - 1) * -1);
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
 
 .item10 {
-  animation-delay: calc(30s / 4 * (4 - 2) * -1);
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
 }
 
 .item11 {
-  animation-delay: calc(30s / 4 * (4 - 3) * -1);
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
 }
 
 .item12 {
-  animation-delay: calc(30s / 4 * (4 - 4) * -1);
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item13 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item14 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item15 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item16 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
 .wrapper:nth-of-type(3) .itemLeft {
-  left: max(calc(200px * 4), 100%);
+  left: max(calc(250px * 8), 100%);
 }
