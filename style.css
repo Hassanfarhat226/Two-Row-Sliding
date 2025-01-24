@@ -1,13 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
 body {
   background-color: #030712;
 }
@@ -20,25 +10,6 @@ body {
   height: 100px;
   position: relative;
   overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  );
-}
-
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
-}
-
-@keyframes scrollRight {
-  to {
-    right: -200px;
-  }
 }
 
 .itemLeft,
@@ -58,65 +29,23 @@ body {
   background-image: url("https://statics.myclickfunnels.com/workspace/vZraBn/image/9262289/file/caa61b2c4bb76f9c082d9c03237b2ff7.png");
 }
 .item2 {
-  background-image: url("image2.png");
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+2");
 }
 .item3 {
-  background-image: url("image3.png");
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+3");
 }
 .item4 {
-  background-image: url("image4.png");
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+4");
 }
 .item5 {
-  background-image: url("image5.png");
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+5");
 }
 .item6 {
-  background-image: url("image6.png");
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+6");
 }
 .item7 {
-  background-image: url("image7.png");
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+7");
 }
 .item8 {
-  background-image: url("image8.png");
-}
-
-.itemLeft {
-  left: max(calc(200px * 8), 100%);
-  animation-name: scrollLeft;
-}
-
-.itemRight {
-  right: max(calc(200px * 8), calc(100% + 200px));
-  animation-name: scrollRight;
-}
-
-.item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
-}
-
-.item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
-}
-
-.item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
-}
-
-.item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
-}
-
-.item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
-}
-
-.item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
-}
-
-.item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
-}
-
-.item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  background-image: url("https://via.placeholder.com/200x100.png?text=Image+8");
 }
